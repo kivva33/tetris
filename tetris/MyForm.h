@@ -5,7 +5,7 @@
 #include <random>
 #include <windows.h>
 #include "MyDialog.h"
-
+//bad version
 namespace tetris {
 
 	using namespace System;
