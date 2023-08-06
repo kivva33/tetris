@@ -210,8 +210,7 @@ namespace tetris {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
-				static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->BackColor = System::Drawing::Color::White;
 			this->ClientSize = System::Drawing::Size(679, 817);
 			this->Controls->Add(this->btn_pause);
 			this->Controls->Add(this->pb_next);
@@ -475,10 +474,10 @@ private: System::Void MyForm_KeyDown(System::Object^ sender, System::Windows::Fo
 	if (e->KeyCode == System::Windows::Forms::Keys::P) {
 		timer1->Enabled = !timer1->Enabled;
 		pos = !pos;
-		if (dlg->ShowDialog() == Windows::Forms::DialogResult::OK && pos) {
+		/*if (dlg->ShowDialog() == Windows::Forms::DialogResult::OK && pos) {
 			timer1->Enabled = !timer1->Enabled;
 			pos = !pos;
-		}
+		}*/
 	}
 }
 private: System::Void MyForm_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
@@ -527,10 +526,10 @@ private: System::Void MyForm_KeyPress(System::Object^ sender, System::Windows::F
 private: System::Void btn_pause_Click(System::Object^ sender, System::EventArgs^ e) {
 	timer1->Enabled = !timer1->Enabled;
 	pos = !pos;
-	if (dlg->ShowDialog() == Windows::Forms::DialogResult::OK && pos) {
+	/*if (dlg->ShowDialog() == Windows::Forms::DialogResult::OK && pos) {
 		timer1->Enabled = !timer1->Enabled;
 		pos = !pos;
-	}
+	}*/
 }
 
 };
